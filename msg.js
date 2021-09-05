@@ -1,4 +1,4 @@
-let predictionsData = [
+const predictionsData = [
   "A beautiful, smart, and loving person will be coming into your life.",
   "A dubious friend may be an enemy in camouflage.",
   "A faithful friend is a strong defense.",
@@ -33,9 +33,23 @@ let predictionsData = [
   "All will go well with your new project.",
 ];
 
-const chooseOneOfPredictions = (array) => {
+const forWhatPerson = [
+  "me",
+  "my bestfriend",
+  "my girlfriend",
+  "my father",
+  "my mother",
+];
+
+const chooseOneOf = (array) => {
   const randomNumber = Math.floor(Math.random() * array.length);
   return array[randomNumber];
 };
 
-console.log(chooseOneOfPredictions(predictionsData));
+const fullPrediction = () => {
+  return `Prediction for ${chooseOneOf(forWhatPerson)}: ${chooseOneOf(
+    predictionsData
+  )}`;
+};
+
+console.log(fullPrediction());
