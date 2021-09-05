@@ -1,3 +1,5 @@
+//This is programm for generate random predictions for random people
+
 const predictionsData = [
   "A beautiful, smart, and loving person will be coming into your life.",
   "A dubious friend may be an enemy in camouflage.",
